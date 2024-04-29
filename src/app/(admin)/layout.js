@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import "../globals.css";
 import { Providers } from "../provider";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -13,7 +14,7 @@ export default function AdminLayout({ children }) {
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className}`}>
         <Providers>
-          <main className="flex min-h-screen flex-col items-center justify-between p-24">
+          <main className="flex flex-col flex-1 items-center justify-between px-24">
             {children}
           </main>
         </Providers>
