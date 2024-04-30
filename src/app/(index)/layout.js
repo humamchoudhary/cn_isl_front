@@ -1,6 +1,8 @@
 import { Inter } from "next/font/google";
 import "../globals.css";
 import Navbar from "@/components/Navbar";
+import Container from "@/components/Container";
+
 import { Providers } from "../provider";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -16,9 +18,7 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className}`}>
         <Providers>
           <Navbar />
-          <main className="flex min-h-screen flex-col items-center justify-between p-24">
             {children}
-          </main>
         </Providers>
       </body>
     </html>
