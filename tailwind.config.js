@@ -12,8 +12,9 @@ module.exports = {
     colors: {
       dark: "#11111b",
       light: "#fff",
-      prim: "#74c7ec",
+      primary: "#74c7ec",
       dark_sec: "#181825",
+      secondary: "#74eeff",
     },
     container: {
       center: true,

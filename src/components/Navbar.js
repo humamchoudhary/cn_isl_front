@@ -34,9 +34,13 @@ function Navbar() {
 
   return (
     <Container>
-      <div className={`min-w-full flex flex-col justify-center items-center py-8 sticky top-0 z-50 bg-white ${isScrolled && "shadow-xl shadow-blue-100"}`}>
+      <div
+        className={`min-w-full flex flex-col justify-center items-center py-8 sticky top-0 z-50 bg-white ${
+          isScrolled && "shadow-xl shadow-blue-100"
+        }`}
+      >
         <div className="flex flex-row justify-between w-full items-center bg-light dark:bg-dark">
-          <div className="font-black text-3xl">Logo</div>
+          <div className="font-black text-3xl">CISL</div>
           <div className="flex flex-row items-center gap-10">
             <ScrollLink
               to="home"
@@ -87,7 +91,7 @@ function Navbar() {
           <div className="flex flex-row gap-4 items-center justify-center hover:cursor-pointer">
             <div
               onClick={handleSwitchDarkMode}
-              className="bg-prim text-light dark:text-dark p-3 rounded-full duration-200"
+              className=" bg-primary text-light dark:text-dark p-3 rounded-full duration-200"
             >
               {resolvedTheme === "light" ? <FaRegSun /> : <FaRegMoon />}
             </div>
